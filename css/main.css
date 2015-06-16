@@ -39,6 +39,6 @@ body {
   padding-left: 15px;
 }
 
-.footer .nav a.active {
+.footer > .container .nav .active {
     background-color: #e7e7e7;
 }
