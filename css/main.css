@@ -1,0 +1,13 @@
+
+/* BRAND */
+.navbar-brand {
+    padding: 0;
+}
+.navbar-brand img {
+    width: 64px;
+    height: 64px;
+}
+.navbar-brand span {
+    line-height: 64px;
+    margin-left: 5px;
+}
