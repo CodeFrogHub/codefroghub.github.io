@@ -1,0 +1,23 @@
+<div class="row">
+  {% for post in site.posts | sort 'date' %}
+    {% if post.url == page.url %}
+      {% if forloop.index > 0 %}
+        <div class="col-md-6">
+          <a class=""  href="{{ site.posts[forloop.index-1] }}">
+            <i class="glyphicon glyphicon-menu-left"></i> Vorherige Post
+          </a>
+        </div>
+      {% endif %}
+      
+      {% if forloop.index + 1 <= forloop.length - 1 %}
+        <div class="col-md-6 text-right">
+          <a class="" href="{{ site.posts[forloop.index+1] }}">
+            Nächster Post <i class="glyphicon glyphicon-menu-right"></i>
+          </a>
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+<br/>

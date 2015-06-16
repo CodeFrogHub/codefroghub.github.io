@@ -26,6 +26,13 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          
+          
+          {% if page.url == '/archiv/index.html' %}
+            <li class="active"><a class="active" href="{{ '/archiv' | prepend: site.baseurl }}">Archiv</a></li>
+          {% else %}
+            <li><a href="{{ '/archiv' | prepend: site.baseurl }}">Archiv</a></li>
+          {% endif %}
       </ul>
     </div><!--/.nav-collapse -->
   </div>
