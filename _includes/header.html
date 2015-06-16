@@ -28,7 +28,7 @@
           {% endfor %}
           
           
-          {% if page.url == '/archiv/index.html' %}
+          {% if page.url contains '/archiv/' %}
             <li class="active"><a class="active" href="{{ '/archiv' | prepend: site.baseurl }}">Archiv</a></li>
           {% else %}
             <li><a href="{{ '/archiv' | prepend: site.baseurl }}">Archiv</a></li>
